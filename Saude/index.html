@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saude</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+      <a class="logo" href="/">   <img src="C:\Users\Gamer\Desktop\Saude\imagem\logo.png" left="100" width="100"> </a>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div> 
+        <ul class="nav-list">
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Projetos</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav> 
+    </header> 
+    <div class ="content"> 
+      <div class="slides">
+
+          <input class="botao " type="radio" name="slide" id="slide1" checked>
+          <input class="botao " type="radio" name="slide" id="slide2"> 
+          <input class="botao " type="radio" name="slide" id="slide3"> 
+          <input class="botao " type="radio" name="slide" id="slide4"> 
+          <input class="botao " type="radio" name="slide" id="slide5"> 
+         
+          
+          <div class ="slide s1">
+              <img src="C:\Users\Gamer\Desktop\Saude\imagem\novo.jpg" alt="serviços" >
+          </div> 
+          
+          <div class ="slide s2">
+            <img src="C:\Users\Gamer\Desktop\Saude\imagem\novo2.jpg" alt="saude" >
+          </div> 
+
+          <div class ="slide s3">
+            <img src="C:\Users\Gamer\Desktop\Saude\imagem\novo4.png" alt="saude2" >
+          </div>
+          
+          <div class ="slide s4">
+            <img src="C:\Users\Gamer\Desktop\Saude\imagem\novo3.png" alt="saude3" >
+          </div>
+          
+          <div class ="slide s5">
+            <img src="C:\Users\Gamer\Desktop\Saude\imagem\novo01.png" alt="saude4" >
+          </div>
+          
+          
+          <div class = "navigation">  
+            
+            <label class="bar" for = "slide1"></label>
+            <label class="bar" for = "slide2"></label>
+            <label class="bar" for = "slide3"></label>
+            <label class="bar" for = "slide4"></label>
+            <label class="bar" for = "slide5"></label>
+          </div>
+
+       </div>
+    </div>    
+>
+  <main class="imc"> 
+    <div class="container">
+      <div class="title"> Calculadora - IMC </div>
+      <div class="input">
+          <label>Nome:</label>
+          <input type="text" id='nome'>
+      </div>
+      <div class="input">
+          <label>Altura:</label>
+          <input type="number" id='altura'>
+      </div>
+      <div class="input">
+          <label>Peso:</label>
+          <input type="number" id='peso'>
+      </div>
+
+      <button id='calcular'>Calcular</button>
+
+      <div class="result" id='resultado'></div>
+    </div>
+  </main>
+  <script src="./site.js"></script>
+</body> 
+
+         <center>
+          <table border="">
+                  <tr>
+                      <th>IMC</th>
+                      <th>CLASSIFICAÇÃO</th>
+                      <th>OBESIDADE (GRAU)</th>
+                    </tr>
+                      <tr>
+                    <td>MENOR QUE 18,5</td> 
+                    <td> MAGREZA</td>   
+                    <td> 0</td>
+                  </tr> 
+                    <tr>
+                    <td>ENTRE 18,5 E 24,9 </td> 
+                    <td>  NORMAL </td>  
+                    <td> 1</td>  
+                    </tr>
+                    <tr>
+                    <td>ENTRE 25,0 E 29,9</td> 
+                    <td> SOBREPESO </td> 
+                     <td> 2</td> 
+                      </tr> 
+                    <tr>
+                    <td>ENTRE 30,0 E 39,9 </td> 
+                    <td> OBESIDADE </td> 
+                    <td> 3</td>  
+                  </tr>
+                    <tr>
+                    <td>MAIOR QUE 40,0 </td> 
+                    <td> OBESIDADE GRAVE </td> 
+                     <td> 4</td>  
+                  </tr>
+                  </tr>
+                </tr>
+          </table>
+      </center>
+
+      <form class="tabela" action="/pagina-processa-dados-do-form" method="post">
+        <body>
+          <h1>Cadastrar Usuário</h1>
+          <form  name="formuser" action="enviar.php" method="POST">
+            Nome:<input type="text" name="nome completo"><br><br>
+            E-mail:<input type="text" name="email" ><br><br>
+            Senha:<input type="password" name="senha" ><br><br>
+            Data Nascimento:<input type="datetime-local" name="date" placeholder="DD/MM/YYYY"><br><br>
+            Sexo:<input type="text" name="Sexo" ><br><br> 
+            
+            <div class="input_div"> 
+              CPF:<input type="text" name="cpf" \
+              pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \
+              title="Digite um CPF no formato: xxx.xxx.xxx-xx">
+           </div>
+          
+            Logradouro:<input type="text" name="Logradouro" ><br><br> 
+            Número do Logradouro:<input type="text" name="Número do Logradouro" ><br><br> 
+            CEP:<input type="text" name="CEP" ><br><br> 
+            Cidade :<input type="text" name="Cidade" ><br><br> 
+            UF:<input type="text" name="UF" ><br><br>  
+
+            <input type="submit" onclick="" return validar()> 
+          </form >
+        </body>
+      </form>
+  
+      <center>
+        <h1> Nossa Empresa </h1>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.107007068325!2d-46.79717348447378!3d-23.672130971578568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce53051b10f98f%3A0x6ed1bcb7b515df2d!2sR.%20Francisco%20Pinto%20Miguel%20-%20Parque%20Fernanda%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005888-100!5e0!3m2!1spt-BR!2sbr!4v1648072783848!5m2!1spt-BR!2sbr" width="800" height="450" style="border:0;"  margin-top="center"
+      allowfullscreen="" loading="lazy" ></iframe>
+      </center>
+  
+</html>
+
+
+
